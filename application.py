@@ -35,9 +35,9 @@ def predict_datapoint():
 
         result = lin.predict(new_data_scaled)
 
-        return render_template('home.html', results=result[0])
+        return render_template('dex.html', results=result[0])
     else:
-        return render_template('home.html')
+        return render_template('dex.html')
 
 
 if __name__ == '__main__':
